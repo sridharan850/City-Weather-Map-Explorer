@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌐 City Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://leaverou.github.io/awesomplete/awesomplete.css" />
+  <script src="https://leaverou.github.io/awesomplete/awesomplete.min.js"></script>
+  <style>
+    iframe { width: 100%; height: 300px; border: 0; border-radius: 12px; }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-2xl">
+    <h1 class="text-3xl font-bold mb-4 text-center">🌤️ City Weather & Map Explorer</h1>
+    <div class="flex mb-4">
+      <input id="cityInput" type="text" placeholder="Type a city..." class="awesomplete flex-grow p-3 border rounded-l-lg text-lg" />
+      <button id="searchBtn" class="bg-blue-600 text-white px-6 text-lg rounded-r-lg hover:bg-blue-700">Explore</button>
+    </div>
+    <div id="weatherResult" class="text-center text-gray-700 text-lg mb-4"></div>
+    <div id="mapContainer" class="mt-4">
+      <iframe id="mapFrame" src="" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
